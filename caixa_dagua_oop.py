@@ -30,8 +30,8 @@ class App(tk.Tk):
         messagebox.showinfo("Caixa d'água",f"Consumo diário {volume}L\n Utilizar caixa d'água de {caixa}L")
 
     def create_widgets(self):
-        self.img = ImageTk.PhotoImage(Image.open("caixa_svg.png"))
-        #img = tk.PhotoImage("caixadagua.png")
+        self.img = ImageTk.PhotoImage(Image.open("caixa_3d.png"))
+        #img = tk.PhotoImage("caixa_3d.png")
         self.panel = ttk.Label(self, image = self.img)
         self.panel.grid(column=0,row=0, columnspan=2)
         self.username_label = ttk.Label(self, text="Consumo per capita (L/dia):")
